@@ -51,7 +51,7 @@ exports.togglePinQuestion = async (req, res) => {
                 .json({ success: false, message: "Question not found" });
         }
 
-        question.isPainned = !question.isPainned;
+        question.isPinned = !question.isPinned;
         await question.save();
 
         res.status(200).json({ success: true, question });
