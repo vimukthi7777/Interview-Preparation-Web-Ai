@@ -19,13 +19,13 @@ export const API_PATHS = {
     SESSION: {
         CREATE: "/api/sessions/create", // Create a new interview session with questions
         GET_ALL: "/api/sessions/my-sessions", // Get all user sessions
-        GET_ONE: (id) => '/api/sessions/${id}', // Get session details with questions
-        DELETE: (id) => '/api/sessions/${id}', // Delete a session
+        GET_ONE: (id) => `/api/sessions/${id}`, // Get session details with questions
+        DELETE: (id) => `/api/sessions/${id}`, // Delete a session
     },
 
     QUESTION: {
         ADD_TO_SESSION: "/api/questions/add", // Add more questions to a session
-        PIN: (id) => '/api/questions/${id}/pin', // Pin or Unpin a question
-        UPDATE_NOTE: (id) => '/api/questions/${id}/note', // Update/Add a note to a question
+        PIN: (id) => `/api/questions/${id}/pin`, // Pin or Unpin a question
+        UPDATE_NOTE: (id) => `/api/questions/${id}/note`, // Update/Add a note to a question
     },
 };
