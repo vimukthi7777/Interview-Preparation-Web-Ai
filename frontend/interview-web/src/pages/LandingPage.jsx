@@ -133,7 +133,7 @@ const LandingPage = () => {
       <Modal
           isOpen={openAuthModal}
           onClose={() => {
-            setOpenAuthModal(false);
+            setOpenAuthModel(false);
             setCurrentPage("login");
           }}
           hideHeader
