@@ -1,4 +1,4 @@
-export const BASE_URL = "https://interview-preparation-web-ai.vercel.app";
+export const BASE_URL = env.BASE_URL;
 
 export const API_PATHS = {
     AUTH: {
